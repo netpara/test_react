@@ -2,7 +2,7 @@ export default function Main(){
 return(
 <div>
     <h1>
-        hi main
+        hi parstoo
     </h1>
     <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ratione reprehenderit odit sequi! Obcaecati iusto
