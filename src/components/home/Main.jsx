@@ -6,12 +6,12 @@ return(
     <h1>
         hi parstoo
     </h1>
-    <CourseBox course={{
+    {/* <CourseBox course={{
         title: "course number one",
         details : "this is about the course"
-    }}/>
-    {/* <CourseBox title="javascript course" detailes="javascript details..." />
-    <CourseBox title="react course " detailes="react course details ..." /> */}
+    }}/> */}
+    <CourseBox title="javascript course" detailes="javascript details..." />
+    <CourseBox title="react course " />
 </div>
 )
 }
