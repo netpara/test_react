@@ -1,4 +1,5 @@
 import CourseBox from "./CourseBox";
+import CourseList from "./CourseList";
 
 export default function Main(){
 return(
@@ -6,12 +7,22 @@ return(
     <h1>
         hi parstoo
     </h1>
-    {/* <CourseBox course={{
+    <CourseList>
+    
+        <CourseBox course={{
         title: "course number one",
         details : "this is about the course"
-    }}/> */}
-    <CourseBox title="javascript course" detailes="javascript details..." />
-    <CourseBox title="react course " />
+    }}/>
+        <CourseBox course={{
+        title: "course number two",
+        details : "this is about the course"
+    }}/>
+        <CourseBox course={{
+        title: "course number tree",
+        details : "this is about the course"
+    }}/>
+    </CourseList>
+
 </div>
 )
 }

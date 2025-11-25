@@ -1,9 +1,9 @@
-export default function CourseBox({ title: ti , detailes = "default"}){
+export default function CourseBox({course}){
 return(
 <div>
-    <h2>{ti}</h2>
-    <p>{detailes}</p>
-    <span>time : 10</span>
+    <h2>{course?.title}</h2>
+    <p>{course?.details}</p>
+    <span>time : 13</span>
 </div>
 )
 }
