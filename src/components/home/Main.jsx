@@ -1,11 +1,19 @@
+import { useState } from "react";
 import CourseBox from "./CourseBox";
 import CourseList from "./CourseList";
 
 export default function Main(){
 
-    const clickHandler = () => {
-        console.log('clickkkkkkkkkkkk!')
+    const [ message , setmassege] = useState("not data loaded")
+
+    const clickHandler =() => {
+        setmassege("loading...")
     }
+
+
+    // const clickHandler = () => {
+    //     console.log('clickkkkkkkkkkkk!')
+    // }
 
 return(
 <div>
@@ -14,6 +22,7 @@ return(
     </h1>
 
     <button onClick={clickHandler}>Click Me!</button>
+    <p>{message}</p>
     {/* <CourseList>
     
         <CourseBox course={{
