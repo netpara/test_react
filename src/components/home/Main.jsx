@@ -4,16 +4,11 @@ import CourseList from "./CourseList";
 
 export default function Main(){
 
-    const [ message , setmassege] = useState("not data loaded")
+    const [ clickCount , setClickCount] = useState("0")
 
     const clickHandler =() => {
-        setmassege("loading...")
+        setClickCount( parseInt(clickCount) + 1 )
     }
-
-
-    // const clickHandler = () => {
-    //     console.log('clickkkkkkkkkkkk!')
-    // }
 
 return(
 <div>
@@ -22,7 +17,7 @@ return(
     </h1>
 
     <button onClick={clickHandler}>Click Me!</button>
-    <p>{message}</p>
+    <p>{clickCount}</p>
     {/* <CourseList>
     
         <CourseBox course={{
